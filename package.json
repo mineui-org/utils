@@ -1,6 +1,6 @@
 {
 	"name"                             : "@mineui/utils",
-	"version"                          : "0.0.2",
+	"version"                          : "0.0.3",
 	"description"                      : "utils",
 	"keywords"                         : ["mine", "ui", "utils"],
 	"license"                          : "MIT",
@@ -21,15 +21,18 @@
 	"main"                             : "./dist/index.js",
 	"types"                            : "./dist/index.d.ts",
 	"files"                            : ["dist"],
+	"style"                            : "./dist/index.css",
 	"exports": {
 		".": {
 			"types"                    : "./dist/index.d.ts",
 			"import"                   : "./dist/index.js",
 			"require"                  : "./dist/index.js"
-		}
+		},
+		"./style": "./dist/scss/index.scss"
 	},
 	"scripts": {
-		"build"                        : "sass src/style/index.scss dist/index.css --style=compressed",
+		"build"                        : "sass src/scss/index.scss dist/index.css --style=compressed && bun scripts/copy-scss.js",
+		"build:scss"                   : "bun scripts/copy-scss.js",
 		"lint"                         : "eslint src --ext .ts",
 		"test"                         : "bun test"
 	},
