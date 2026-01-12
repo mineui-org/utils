@@ -1,0 +1,23 @@
+{
+	"type"              : "lib",
+	"template"          : "clean",
+	"pm"                : "bun",
+	"repo": {
+		"org"           : "mineui",
+		"name"          : "utils",
+		"version"       : "0.0.1",
+		"desc"          : "utils",
+		"kw"            : ["mine", "ui", "utils"],
+		"license"       : "MIT",
+		"issues"        : "https://github.com/mineui-org/utils/issues",
+		"homepage"      : "https://github.com/mineui-org/coutilse#readme",
+		"git_url"       : "git+https://github.com/mineui-org/utils.git"
+	},
+	"author": {
+		"id"            : "maysara-elshewehy",
+		"name"          : "Maysara",
+		"email"         : "maysara.elshewehy@gmail.com",
+		"url"           : "https://github.com/maysara-elshewehy"
+	},
+	"createdAt"         : "2026-01-08T03:01:58.268Z"
+}
