@@ -8,7 +8,7 @@
 </div>
 
 <div align="center">
-    <img src="https://img.shields.io/badge/v-0.0.8-black"/>
+    <img src="https://img.shields.io/badge/v-0.0.9-black"/>
     <a href="https://github.com/mineui-org"><img src="https://img.shields.io/badge/🔥-@mineui-black"/></a>
     <br>
     <img src="https://img.shields.io/badge/classes-7000+-blue" alt="Total Classes" />

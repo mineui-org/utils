@@ -1,6 +1,6 @@
 {
 	"name"                             : "@mineui/utils",
-	"version"                          : "0.0.8",
+	"version"                          : "0.0.9",
 	"description"                      : "utils",
 	"keywords"                         : ["mine", "ui", "utils"],
 	"license"                          : "MIT",
