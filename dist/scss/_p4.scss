@@ -7,29 +7,29 @@
 // ----------------------------------------------------------------------------
 // PACK
 // ----------------------------------------------------------------------------
-    @use '../../../node_modules/@mineui/tokens' as *;
+    @use '../../node_modules/@mineui/tokens/dist/scss/' as tokens;
 
 
 // ----------------------------------------------------------------------------
 // 51. BOX SHADOW
 // ----------------------------------------------------------------------------
-.shadow-none { box-shadow: $shadow-none !important; }
+.shadow-none { box-shadow: tokens.$shadow-none !important; }
 .shadow-xs { box-shadow: var(--shadow-xs) !important; }
 .shadow-sm { box-shadow: var(--shadow-sm) !important; }
 .shadow { box-shadow: var(--shadow-md) !important; }
 .shadow-md { box-shadow: var(--shadow-md) !important; }
 .shadow-lg { box-shadow: var(--shadow-lg) !important; }
 .shadow-xl { box-shadow: var(--shadow-xl) !important; }
-.shadow-inner { box-shadow: $shadow-inner !important; }
+.shadow-inner { box-shadow: tokens.$shadow-inner !important; }
 
 // ----------------------------------------------------------------------------
 // 52. OPACITY
 // ----------------------------------------------------------------------------
 @each $key, $value in (
-  0: $opacity-0, 5: $opacity-5, 10: $opacity-10, 20: $opacity-20,
-  25: $opacity-25, 30: $opacity-30, 40: $opacity-40, 50: $opacity-50,
-  60: $opacity-60, 70: $opacity-70, 75: $opacity-75, 80: $opacity-80,
-  90: $opacity-90, 95: $opacity-95, 100: $opacity-100
+  0: tokens.$opacity-0, 5: tokens.$opacity-5, 10: tokens.$opacity-10, 20: tokens.$opacity-20,
+  25: tokens.$opacity-25, 30: tokens.$opacity-30, 40: tokens.$opacity-40, 50: tokens.$opacity-50,
+  60: tokens.$opacity-60, 70: tokens.$opacity-70, 75: tokens.$opacity-75, 80: tokens.$opacity-80,
+  90: tokens.$opacity-90, 95: tokens.$opacity-95, 100: tokens.$opacity-100
 ) {
   .opacity-#{$key} { opacity: $value !important; }
 }
@@ -80,13 +80,13 @@
 
 // Blur
 .blur-none { filter: blur(0) !important; }
-.blur-sm { filter: blur($blur-sm) !important; }
-.blur { filter: blur($blur-base) !important; }
-.blur-md { filter: blur($blur-md) !important; }
-.blur-lg { filter: blur($blur-lg) !important; }
-.blur-xl { filter: blur($blur-xl) !important; }
-.blur-2xl { filter: blur($blur-2xl) !important; }
-.blur-3xl { filter: blur($blur-3xl) !important; }
+.blur-sm { filter: blur(tokens.$blur-sm) !important; }
+.blur { filter: blur(tokens.$blur-base) !important; }
+.blur-md { filter: blur(tokens.$blur-md) !important; }
+.blur-lg { filter: blur(tokens.$blur-lg) !important; }
+.blur-xl { filter: blur(tokens.$blur-xl) !important; }
+.blur-2xl { filter: blur(tokens.$blur-2xl) !important; }
+.blur-3xl { filter: blur(tokens.$blur-3xl) !important; }
 
 // Brightness
 .brightness-0 { filter: brightness(0) !important; }
@@ -141,11 +141,11 @@
 // 56. BACKDROP FILTER
 // ----------------------------------------------------------------------------
 .backdrop-blur-none { backdrop-filter: blur(0) !important; }
-.backdrop-blur-sm { backdrop-filter: blur($blur-sm) !important; }
-.backdrop-blur { backdrop-filter: blur($blur-base) !important; }
-.backdrop-blur-md { backdrop-filter: blur($blur-md) !important; }
-.backdrop-blur-lg { backdrop-filter: blur($blur-lg) !important; }
-.backdrop-blur-xl { backdrop-filter: blur($blur-xl) !important; }
+.backdrop-blur-sm { backdrop-filter: blur(tokens.$blur-sm) !important; }
+.backdrop-blur { backdrop-filter: blur(tokens.$blur-base) !important; }
+.backdrop-blur-md { backdrop-filter: blur(tokens.$blur-md) !important; }
+.backdrop-blur-lg { backdrop-filter: blur(tokens.$blur-lg) !important; }
+.backdrop-blur-xl { backdrop-filter: blur(tokens.$blur-xl) !important; }
 
 .backdrop-brightness-50 { backdrop-filter: brightness(0.5) !important; }
 .backdrop-brightness-75 { backdrop-filter: brightness(0.75) !important; }
@@ -180,49 +180,49 @@
 .transition-none { transition-property: none !important; }
 .transition-all {
   transition-property: all !important;
-  transition-timing-function: $ease-in-out !important;
-  transition-duration: $dur-normal !important;
+  transition-timing-function: tokens.$ease-in-out !important;
+  transition-duration: tokens.$dur-normal !important;
 }
 .transition {
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter !important;
-  transition-timing-function: $ease-in-out !important;
-  transition-duration: $dur-normal !important;
+  transition-timing-function: tokens.$ease-in-out !important;
+  transition-duration: tokens.$dur-normal !important;
 }
 .transition-colors {
   transition-property: background-color, border-color, color, fill, stroke !important;
-  transition-timing-function: $ease-in-out !important;
-  transition-duration: $dur-normal !important;
+  transition-timing-function: tokens.$ease-in-out !important;
+  transition-duration: tokens.$dur-normal !important;
 }
 .transition-opacity {
   transition-property: opacity !important;
-  transition-timing-function: $ease-in-out !important;
-  transition-duration: $dur-normal !important;
+  transition-timing-function: tokens.$ease-in-out !important;
+  transition-duration: tokens.$dur-normal !important;
 }
 .transition-shadow {
   transition-property: box-shadow !important;
-  transition-timing-function: $ease-in-out !important;
-  transition-duration: $dur-normal !important;
+  transition-timing-function: tokens.$ease-in-out !important;
+  transition-duration: tokens.$dur-normal !important;
 }
 .transition-transform {
   transition-property: transform !important;
-  transition-timing-function: $ease-in-out !important;
-  transition-duration: $dur-normal !important;
+  transition-timing-function: tokens.$ease-in-out !important;
+  transition-duration: tokens.$dur-normal !important;
 }
 
 // Duration
-.duration-75 { transition-duration: $dur-fast !important; }
-.duration-100 { transition-duration: $dur-fast !important; }
-.duration-150 { transition-duration: $dur-normal !important; }
-.duration-200 { transition-duration: $dur-moderate !important; }
-.duration-300 { transition-duration: $dur-slow !important; }
-.duration-500 { transition-duration: $dur-slower !important; }
-.duration-700 { transition-duration: $dur-slowest !important; }
+.duration-75 { transition-duration: tokens.$dur-fast !important; }
+.duration-100 { transition-duration: tokens.$dur-fast !important; }
+.duration-150 { transition-duration: tokens.$dur-normal !important; }
+.duration-200 { transition-duration: tokens.$dur-moderate !important; }
+.duration-300 { transition-duration: tokens.$dur-slow !important; }
+.duration-500 { transition-duration: tokens.$dur-slower !important; }
+.duration-700 { transition-duration: tokens.$dur-slowest !important; }
 
 // Timing Function
-.ease-linear { transition-timing-function: $ease-linear !important; }
-.ease-in { transition-timing-function: $ease-in !important; }
-.ease-out { transition-timing-function: $ease-out !important; }
-.ease-in-out { transition-timing-function: $ease-in-out !important; }
+.ease-linear { transition-timing-function: tokens.$ease-linear !important; }
+.ease-in { transition-timing-function: tokens.$ease-in !important; }
+.ease-out { transition-timing-function: tokens.$ease-out !important; }
+.ease-in-out { transition-timing-function: tokens.$ease-in-out !important; }
 
 // Delay
 .delay-75 { transition-delay: 75ms !important; }
@@ -298,7 +298,7 @@
 .translate-x-0 { transform: translateX(0) !important; }
 .translate-y-0 { transform: translateY(0) !important; }
 
-@each $key, $value in (1: $sp-1, 2: $sp-2, 3: $sp-3, 4: $sp-4, 6: $sp-6, 8: $sp-8, 12: $sp-12, 16: $sp-16) {
+@each $key, $value in (1: tokens.$sp-1, 2: tokens.$sp-2, 3: tokens.$sp-3, 4: tokens.$sp-4, 6: tokens.$sp-6, 8: tokens.$sp-8, 12: tokens.$sp-12, 16: tokens.$sp-16) {
   .translate-x-#{$key} { transform: translateX($value) !important; }
   .translate-y-#{$key} { transform: translateY($value) !important; }
   .-translate-x-#{$key} { transform: translateX(calc($value * -1)) !important; }

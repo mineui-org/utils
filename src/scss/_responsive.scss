@@ -7,7 +7,7 @@
 // ----------------------------------------------------------------------------
 // PACK
 // ----------------------------------------------------------------------------
-    @use '../../../node_modules/@mineui/tokens' as *;
+    @use '../../node_modules/@mineui/tokens/dist/scss/' as tokens;
 
 
 // ----------------------------------------------------------------------------
@@ -28,7 +28,7 @@
 }
 
 // Generate responsive classes for most common utilities
-@each $breakpoint-name, $breakpoint-value in $breakpoints {
+@each $breakpoint-name, $breakpoint-value in tokens.$breakpoints {
   @if $breakpoint-value != 0 {
     @media (min-width: $breakpoint-value) {
 
@@ -80,23 +80,23 @@
       .#{$breakpoint-name}\:text-end { text-align: end !important; }
 
       // Text Size
-      .#{$breakpoint-name}\:text-xs { font-size: $fs-xs !important; }
-      .#{$breakpoint-name}\:text-sm { font-size: $fs-sm !important; }
-      .#{$breakpoint-name}\:text-base { font-size: $fs-base !important; }
-      .#{$breakpoint-name}\:text-lg { font-size: $fs-lg !important; }
-      .#{$breakpoint-name}\:text-xl { font-size: $fs-xl !important; }
-      .#{$breakpoint-name}\:text-2xl { font-size: $fs-2xl !important; }
-      .#{$breakpoint-name}\:text-3xl { font-size: $fs-3xl !important; }
+      .#{$breakpoint-name}\:text-xs { font-size: tokens.$fs-xs !important; }
+      .#{$breakpoint-name}\:text-sm { font-size: tokens.$fs-sm !important; }
+      .#{$breakpoint-name}\:text-base { font-size: tokens.$fs-base !important; }
+      .#{$breakpoint-name}\:text-lg { font-size: tokens.$fs-lg !important; }
+      .#{$breakpoint-name}\:text-xl { font-size: tokens.$fs-xl !important; }
+      .#{$breakpoint-name}\:text-2xl { font-size: tokens.$fs-2xl !important; }
+      .#{$breakpoint-name}\:text-3xl { font-size: tokens.$fs-3xl !important; }
 
       // Common Spacing
-      @each $sp-key, $sp-value in (0: $sp-0, 1: $sp-1, 2: $sp-2, 3: $sp-3, 4: $sp-4, 6: $sp-6, 8: $sp-8, 12: $sp-12) {
-        .#{$breakpoint-name}\:p-#{$sp-key} { padding: $sp-value !important; }
-        .#{$breakpoint-name}\:px-#{$sp-key} { padding-inline: $sp-value !important; }
-        .#{$breakpoint-name}\:py-#{$sp-key} { padding-block: $sp-value !important; }
-        .#{$breakpoint-name}\:m-#{$sp-key} { margin: $sp-value !important; }
-        .#{$breakpoint-name}\:mx-#{$sp-key} { margin-inline: $sp-value !important; }
-        .#{$breakpoint-name}\:my-#{$sp-key} { margin-block: $sp-value !important; }
-        .#{$breakpoint-name}\:gap-#{$sp-key} { gap: $sp-value !important; }
+      @each $key, $value in (0: tokens.$sp-0, 1: tokens.$sp-1, 2: tokens.$sp-2, 3: tokens.$sp-3, 4: tokens.$sp-4, 6: tokens.$sp-6, 8: tokens.$sp-8, 12: tokens.$sp-12) {
+        .#{$breakpoint-name}\:p-#{$key} { padding: $value !important; }
+        .#{$breakpoint-name}\:px-#{$key} { padding-inline: $value !important; }
+        .#{$breakpoint-name}\:py-#{$key} { padding-block: $value !important; }
+        .#{$breakpoint-name}\:m-#{$key} { margin: $value !important; }
+        .#{$breakpoint-name}\:mx-#{$key} { margin-inline: $value !important; }
+        .#{$breakpoint-name}\:my-#{$key} { margin-block: $value !important; }
+        .#{$breakpoint-name}\:gap-#{$key} { gap: $value !important; }
       }
 
       .#{$breakpoint-name}\:mx-auto { margin-inline: auto !important; }
@@ -115,7 +115,7 @@
 .hover\:bg-error:hover { background-color: var(--error-hover) !important; }
 
 // Opacity
-@each $key, $value in (0: $opacity-0, 50: $opacity-50, 75: $opacity-75, 100: $opacity-100) {
+@each $key, $value in (0: tokens.$opacity-0, 50: tokens.$opacity-50, 75: tokens.$opacity-75, 100: 1) {
   .hover\:opacity-#{$key}:hover { opacity: $value !important; }
 }
 
@@ -130,8 +130,8 @@
 .hover\:shadow-lg:hover { box-shadow: var(--shadow-lg) !important; }
 
 // Translate
-.hover\:-translate-y-1:hover { transform: translateY(-#{$sp-1}) !important; }
-.hover\:-translate-y-2:hover { transform: translateY(-#{$sp-2}) !important; }
+.hover\:-translate-y-1:hover { transform: translateY(-#{tokens.$sp-1}) !important; }
+.hover\:-translate-y-2:hover { transform: translateY(-#{tokens.$sp-2}) !important; }
 
 // Brightness
 .hover\:brightness-110:hover { filter: brightness(1.1) !important; }
@@ -168,7 +168,7 @@
 .active\:scale-90:active { transform: scale(0.9) !important; }
 
 // Opacity
-.active\:opacity-80:active { opacity: $opacity-80 !important; }
+.active\:opacity-80:active { opacity: tokens.$opacity-80 !important; }
 
 // Background
 .active\:bg-brand:active { background-color: var(--brand-active) !important; }
@@ -193,9 +193,9 @@
 // GROUP HOVER VARIANTS
 // ----------------------------------------------------------------------------
 
-.group:hover .group-hover\:opacity-100 { opacity: $opacity-100 !important; }
+.group:hover .group-hover\:opacity-100 { opacity: tokens.$opacity-100 !important; }
 .group:hover .group-hover\:scale-105 { transform: scale(1.05) !important; }
-.group:hover .group-hover\:translate-x-1 { transform: translateX($sp-1) !important; }
+.group:hover .group-hover\:translate-x-1 { transform: translateX(tokens.$sp-1) !important; }
 .group:hover .group-hover\:block { display: block !important; }
 
 // ----------------------------------------------------------------------------
@@ -281,13 +281,13 @@
 .last\:mb-0:last-child { margin-block-end: 0 !important; }
 
 .first\:rounded-t:first-child {
-  border-start-start-radius: $br-base !important;
-  border-start-end-radius: $br-base !important;
+  border-start-start-radius: tokens.$br-base !important;
+  border-start-end-radius: tokens.$br-base !important;
 }
 
 .last\:rounded-b:last-child {
-  border-end-start-radius: $br-base !important;
-  border-end-end-radius: $br-base !important;
+  border-end-start-radius: tokens.$br-base !important;
+  border-end-end-radius: tokens.$br-base !important;
 }
 
 // ----------------------------------------------------------------------------
@@ -302,7 +302,7 @@
 // ----------------------------------------------------------------------------
 
 .placeholder\:text-3::placeholder { color: var(--text-3) !important; }
-.placeholder\:opacity-50::placeholder { opacity: $opacity-50 !important; }
+.placeholder\:opacity-50::placeholder { opacity: tokens.$opacity-50 !important; }
 
 // ----------------------------------------------------------------------------
 // FILE INPUT VARIANT
@@ -346,13 +346,13 @@
 .container {
   width: 100%;
   margin-inline: auto;
-  padding-inline: $sp-4;
+  padding-inline: tokens.$sp-4;
 
-  @media (min-width: $bp-sm) { max-width: $bp-sm; }
-  @media (min-width: $bp-md) { max-width: $bp-md; }
-  @media (min-width: $bp-lg) { max-width: $bp-lg; }
-  @media (min-width: $bp-xl) { max-width: $bp-xl; }
-  @media (min-width: $bp-2xl) { max-width: $bp-2xl; }
+  @media (min-width: tokens.$bp-sm) { max-width: tokens.$bp-sm; }
+  @media (min-width: tokens.$bp-md) { max-width: tokens.$bp-md; }
+  @media (min-width: tokens.$bp-lg) { max-width: tokens.$bp-lg; }
+  @media (min-width: tokens.$bp-xl) { max-width: tokens.$bp-xl; }
+  @media (min-width: tokens.$bp-xxl) { max-width: tokens.$bp-xxl; }
 }
 
 // ----------------------------------------------------------------------------

@@ -7,8 +7,8 @@
 // ----------------------------------------------------------------------------
 // PACK
 // ----------------------------------------------------------------------------
-    @use './p1.scss';
-    @use './p2.scss';
-    @use './p3.scss';
-    @use './p4.scss';
-    @use './responsive.scss';
+    @forward './p1.scss';
+    @forward './p2.scss';
+    @forward './p3.scss';
+    @forward './p4.scss';
+    @forward './responsive.scss';

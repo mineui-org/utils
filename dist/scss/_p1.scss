@@ -7,7 +7,7 @@
 // ----------------------------------------------------------------------------
 // PACK
 // ----------------------------------------------------------------------------
-    @use '../../../node_modules/@mineui/tokens' as *;
+    @use '../../node_modules/@mineui/tokens/dist/scss/' as tokens;
 
 
 // ----------------------------------------------------------------------------
@@ -62,7 +62,7 @@
 .bottom-auto { inset-block-end: auto !important; }
 
 // Common values
-@each $key, $value in (1: $sp-1, 2: $sp-2, 3: $sp-3, 4: $sp-4, 6: $sp-6, 8: $sp-8, 12: $sp-12, 16: $sp-16) {
+@each $key, $value in (1: tokens.$sp-1, 2: tokens.$sp-2, 3: tokens.$sp-3, 4: tokens.$sp-4, 6: tokens.$sp-6, 8: tokens.$sp-8, 12: tokens.$sp-12, 16: tokens.$sp-16) {
   .inset-#{$key} { inset: $value !important; }
   .start-#{$key} { inset-inline-start: $value !important; }
   .end-#{$key} { inset-inline-end: $value !important; }
@@ -87,10 +87,10 @@
 // 4. SPACING - MARGIN (RTL-Aware Logical Properties)
 // ----------------------------------------------------------------------------
 @each $key, $value in (
-  0: $sp-0, 1: $sp-1, 2: $sp-2, 3: $sp-3, 4: $sp-4, 5: $sp-5,
-  6: $sp-6, 7: $sp-7, 8: $sp-8, 9: $sp-9, 10: $sp-10, 12: $sp-12,
-  14: $sp-14, 16: $sp-16, 20: $sp-20, 24: $sp-24, 28: $sp-28,
-  32: $sp-32, 36: $sp-36, 40: $sp-40, 48: $sp-48, 56: $sp-56, 64: $sp-64
+  0: tokens.$sp-0, 1: tokens.$sp-1, 2: tokens.$sp-2, 3: tokens.$sp-3, 4: tokens.$sp-4, 5: tokens.$sp-5,
+  6: tokens.$sp-6, 7: tokens.$sp-7, 8: tokens.$sp-8, 9: tokens.$sp-9, 10: tokens.$sp-10, 12: tokens.$sp-12,
+  14: tokens.$sp-14, 16: tokens.$sp-16, 20: tokens.$sp-20, 24: tokens.$sp-24, 28: tokens.$sp-28,
+  32: tokens.$sp-32, 36: tokens.$sp-36, 40: tokens.$sp-40, 48: tokens.$sp-48, 56: tokens.$sp-56, 64: tokens.$sp-64
 ) {
   // All sides
   .m-#{$key} { margin: $value !important; }
@@ -130,10 +130,10 @@
 // 5. SPACING - PADDING (RTL-Aware Logical Properties)
 // ----------------------------------------------------------------------------
 @each $key, $value in (
-  0: $sp-0, 1: $sp-1, 2: $sp-2, 3: $sp-3, 4: $sp-4, 5: $sp-5,
-  6: $sp-6, 7: $sp-7, 8: $sp-8, 9: $sp-9, 10: $sp-10, 12: $sp-12,
-  14: $sp-14, 16: $sp-16, 20: $sp-20, 24: $sp-24, 28: $sp-28,
-  32: $sp-32, 36: $sp-36, 40: $sp-40, 48: $sp-48, 56: $sp-56, 64: $sp-64
+  0: tokens.$sp-0, 1: tokens.$sp-1, 2: tokens.$sp-2, 3: tokens.$sp-3, 4: tokens.$sp-4, 5: tokens.$sp-5,
+  6: tokens.$sp-6, 7: tokens.$sp-7, 8: tokens.$sp-8, 9: tokens.$sp-9, 10: tokens.$sp-10, 12: tokens.$sp-12,
+  14: tokens.$sp-14, 16: tokens.$sp-16, 20: tokens.$sp-20, 24: tokens.$sp-24, 28: tokens.$sp-28,
+  32: tokens.$sp-32, 36: tokens.$sp-36, 40: tokens.$sp-40, 48: tokens.$sp-48, 56: tokens.$sp-56, 64: tokens.$sp-64
 ) {
   // All sides
   .p-#{$key} { padding: $value !important; }
@@ -155,8 +155,8 @@
 // 6. SPACE BETWEEN (Gap for Flex/Grid children)
 // ----------------------------------------------------------------------------
 @each $key, $value in (
-  0: $sp-0, 1: $sp-1, 2: $sp-2, 3: $sp-3, 4: $sp-4, 6: $sp-6,
-  8: $sp-8, 10: $sp-10, 12: $sp-12, 16: $sp-16, 20: $sp-20, 24: $sp-24
+  0: tokens.$sp-0, 1: tokens.$sp-1, 2: tokens.$sp-2, 3: tokens.$sp-3, 4: tokens.$sp-4, 6: tokens.$sp-6,
+  8: tokens.$sp-8, 10: tokens.$sp-10, 12: tokens.$sp-12, 16: tokens.$sp-16, 20: tokens.$sp-20, 24: tokens.$sp-24
 ) {
   .space-x-#{$key} > * + * { margin-inline-start: $value !important; }
   .space-y-#{$key} > * + * { margin-block-start: $value !important; }
@@ -193,9 +193,9 @@
 
 // Fixed widths
 @each $key, $value in (
-  0: $sp-0, 1: $sp-1, 2: $sp-2, 3: $sp-3, 4: $sp-4, 6: $sp-6, 8: $sp-8,
-  10: $sp-10, 12: $sp-12, 16: $sp-16, 20: $sp-20, 24: $sp-24, 32: $sp-32,
-  40: $sp-40, 48: $sp-48, 56: $sp-56, 64: $sp-64
+  0: tokens.$sp-0, 1: tokens.$sp-1, 2: tokens.$sp-2, 3: tokens.$sp-3, 4: tokens.$sp-4, 6: tokens.$sp-6, 8: tokens.$sp-8,
+  10: tokens.$sp-10, 12: tokens.$sp-12, 16: tokens.$sp-16, 20: tokens.$sp-20, 24: tokens.$sp-24, 32: tokens.$sp-32,
+  40: tokens.$sp-40, 48: tokens.$sp-48, 56: tokens.$sp-56, 64: tokens.$sp-64
 ) {
   .w-#{$key} { width: $value !important; }
 }
@@ -254,9 +254,9 @@
 
 // Fixed heights
 @each $key, $value in (
-  0: $sp-0, 1: $sp-1, 2: $sp-2, 3: $sp-3, 4: $sp-4, 6: $sp-6, 8: $sp-8,
-  10: $sp-10, 12: $sp-12, 16: $sp-16, 20: $sp-20, 24: $sp-24, 32: $sp-32,
-  40: $sp-40, 48: $sp-48, 56: $sp-56, 64: $sp-64
+  0: tokens.$sp-0, 1: tokens.$sp-1, 2: tokens.$sp-2, 3: tokens.$sp-3, 4: tokens.$sp-4, 6: tokens.$sp-6, 8: tokens.$sp-8,
+  10: tokens.$sp-10, 12: tokens.$sp-12, 16: tokens.$sp-16, 20: tokens.$sp-20, 24: tokens.$sp-24, 32: tokens.$sp-32,
+  40: tokens.$sp-40, 48: tokens.$sp-48, 56: tokens.$sp-56, 64: tokens.$sp-64
 ) {
   .h-#{$key} { height: $value !important; }
 }
@@ -280,9 +280,9 @@
 
 // Fixed max heights
 @each $key, $value in (
-  0: $sp-0, 1: $sp-1, 2: $sp-2, 3: $sp-3, 4: $sp-4, 6: $sp-6, 8: $sp-8,
-  10: $sp-10, 12: $sp-12, 16: $sp-16, 20: $sp-20, 24: $sp-24, 32: $sp-32,
-  40: $sp-40, 48: $sp-48, 56: $sp-56, 64: $sp-64
+  0: tokens.$sp-0, 1: tokens.$sp-1, 2: tokens.$sp-2, 3: tokens.$sp-3, 4: tokens.$sp-4, 6: tokens.$sp-6, 8: tokens.$sp-8,
+  10: tokens.$sp-10, 12: tokens.$sp-12, 16: tokens.$sp-16, 20: tokens.$sp-20, 24: tokens.$sp-24, 32: tokens.$sp-32,
+  40: tokens.$sp-40, 48: tokens.$sp-48, 56: tokens.$sp-56, 64: tokens.$sp-64
 ) {
   .max-h-#{$key} { max-height: $value !important; }
 }
@@ -291,9 +291,9 @@
 // 11. SIZE (Width + Height together)
 // ----------------------------------------------------------------------------
 @each $key, $value in (
-  0: $sp-0, 1: $sp-1, 2: $sp-2, 3: $sp-3, 4: $sp-4, 6: $sp-6, 8: $sp-8,
-  10: $sp-10, 12: $sp-12, 16: $sp-16, 20: $sp-20, 24: $sp-24, 32: $sp-32,
-  40: $sp-40, 48: $sp-48, 56: $sp-56, 64: $sp-64
+  0: tokens.$sp-0, 1: tokens.$sp-1, 2: tokens.$sp-2, 3: tokens.$sp-3, 4: tokens.$sp-4, 6: tokens.$sp-6, 8: tokens.$sp-8,
+  10: tokens.$sp-10, 12: tokens.$sp-12, 16: tokens.$sp-16, 20: tokens.$sp-20, 24: tokens.$sp-24, 32: tokens.$sp-32,
+  40: tokens.$sp-40, 48: tokens.$sp-48, 56: tokens.$sp-56, 64: tokens.$sp-64
 ) {
   .size-#{$key} { width: $value !important; height: $value !important; }
 }

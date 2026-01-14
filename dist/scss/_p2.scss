@@ -7,7 +7,7 @@
 // ----------------------------------------------------------------------------
 // PACK
 // ----------------------------------------------------------------------------
-    @use '../../../node_modules/@mineui/tokens' as *;
+    @use '../../node_modules/@mineui/tokens/dist/scss/' as tokens;
 
 
 // ----------------------------------------------------------------------------
@@ -31,8 +31,8 @@
 .basis-full { flex-basis: 100% !important; }
 
 @each $key, $value in (
-  1: $sp-1, 2: $sp-2, 3: $sp-3, 4: $sp-4, 6: $sp-6, 8: $sp-8,
-  10: $sp-10, 12: $sp-12, 16: $sp-16, 24: $sp-24, 32: $sp-32
+  1: tokens.$sp-1, 2: tokens.$sp-2, 3: tokens.$sp-3, 4: tokens.$sp-4, 6: tokens.$sp-6, 8: tokens.$sp-8,
+  10: tokens.$sp-10, 12: tokens.$sp-12, 16: tokens.$sp-16, 24: tokens.$sp-24, 32: tokens.$sp-32
 ) {
   .basis-#{$key} { flex-basis: $value !important; }
 }
@@ -131,8 +131,8 @@
 // 13. GAP
 // ----------------------------------------------------------------------------
 @each $key, $value in (
-  0: $sp-0, 1: $sp-1, 2: $sp-2, 3: $sp-3, 4: $sp-4, 5: $sp-5,
-  6: $sp-6, 8: $sp-8, 10: $sp-10, 12: $sp-12, 16: $sp-16, 20: $sp-20, 24: $sp-24
+  0: tokens.$sp-0, 1: tokens.$sp-1, 2: tokens.$sp-2, 3: tokens.$sp-3, 4: tokens.$sp-4, 5: tokens.$sp-5,
+  6: tokens.$sp-6, 8: tokens.$sp-8, 10: tokens.$sp-10, 12: tokens.$sp-12, 16: tokens.$sp-16, 20: tokens.$sp-20, 24: tokens.$sp-24
 ) {
   .gap-#{$key} { gap: $value !important; }
   .gap-x-#{$key} { column-gap: $value !important; }
@@ -289,12 +289,12 @@
 .z-auto { z-index: auto !important; }
 
 // Semantic z-index
-.z-dropdown { z-index: $z-dropdown !important; }
-.z-sticky { z-index: $z-sticky !important; }
-.z-fixed { z-index: $z-fixed !important; }
-.z-modal { z-index: $z-modal !important; }
-.z-popover { z-index: $z-popover !important; }
-.z-tooltip { z-index: $z-tooltip !important; }
+.z-dropdown { z-index: tokens.$z-dropdown !important; }
+.z-sticky { z-index: tokens.$z-sticky !important; }
+.z-fixed { z-index: tokens.$z-fixed !important; }
+.z-modal { z-index: tokens.$z-modal !important; }
+.z-popover { z-index: tokens.$z-popover !important; }
+.z-tooltip { z-index: tokens.$z-tooltip !important; }
 
 // ----------------------------------------------------------------------------
 // 20. VISIBILITY
