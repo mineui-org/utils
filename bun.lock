@@ -4,7 +4,7 @@
     "": {
       "name": "@mineui/core",
       "dependencies": {
-        "@mineui/tokens": "^0.1.0",
+        "@mineui/tokens": "0.1.0",
       },
       "devDependencies": {
         "@eslint/js": "^9.39.2",
