@@ -318,6 +318,7 @@
 
 .peer:checked ~ .peer-checked\:block { display: block !important; }
 .peer:checked ~ .peer-checked\:hidden { display: none !important; }
+.peer:checked ~ .peer-checked\:translate-x-0 { transform: translateX(0) !important; }
 .peer:focus ~ .peer-focus\:ring {
   outline: 2px solid var(--border-focus) !important;
   outline-offset: 2px !important;
