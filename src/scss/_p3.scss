@@ -288,7 +288,7 @@
 .border-4 { border-width: tokens.$bw-4 !important; }
 .border-8 { border-width: tokens.$bw-8 !important; }
 
-.border-w1 { border-width: 1 !important; }
+.border-w1 { border-width: 1px !important; }
 
 // Individual sides (RTL-aware)
 .border-x { border-inline-width: tokens.$bw-1 !important; border-inline-style: solid !important; }
