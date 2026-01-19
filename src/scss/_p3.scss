@@ -287,8 +287,8 @@
 .border-2 { border-width: tokens.$bw-2 !important; }
 .border-4 { border-width: tokens.$bw-4 !important; }
 .border-8 { border-width: tokens.$bw-8 !important; }
-// Hairline (smaller than thin)
-.border-1\/2 { border-width: tokens.$bw-1 * 0.5 !important; }
+
+.border-w1 { border-width: 1 !important; }
 
 // Individual sides (RTL-aware)
 .border-x { border-inline-width: tokens.$bw-1 !important; border-inline-style: solid !important; }
@@ -297,13 +297,6 @@
 .border-e { border-inline-end-width: tokens.$bw-1 !important; border-inline-end-style: solid !important; }
 .border-t { border-block-start-width: tokens.$bw-1 !important; border-block-start-style: solid !important; }
 .border-b { border-block-end-width: tokens.$bw-1 !important; border-block-end-style: solid !important; }
-// Hairline sides
-.border-x-1\/2 { border-inline-width: tokens.$bw-1 * 0.5 !important; border-inline-style: solid !important; }
-.border-y-1\/2 { border-block-width: tokens.$bw-1 * 0.5 !important; border-block-style: solid !important; }
-.border-s-1\/2 { border-inline-start-width: tokens.$bw-1 * 0.5 !important; border-inline-start-style: solid !important; }
-.border-e-1\/2 { border-inline-end-width: tokens.$bw-1 * 0.5 !important; border-inline-end-style: solid !important; }
-.border-t-1\/2 { border-block-start-width: tokens.$bw-1 * 0.5 !important; border-block-start-style: solid !important; }
-.border-b-1\/2 { border-block-end-width: tokens.$bw-1 * 0.5 !important; border-block-end-style: solid !important; }
 
 // Border Color (Semantic)
 .border-1 { border-color: var(--border-1) !important; }
