@@ -284,11 +284,10 @@
 // ----------------------------------------------------------------------------
 .border { border-width: tokens.$bw-1 !important; border-style: solid !important; border-color: var(--border-1) !important; }
 .border-0 { border-width: 0 !important; }
+.border-1 { border-width: tokens.$bw-1 !important; }
 .border-2 { border-width: tokens.$bw-2 !important; }
 .border-4 { border-width: tokens.$bw-4 !important; }
 .border-8 { border-width: tokens.$bw-8 !important; }
-
-.border-w1 { border-width: 1px !important; }
 
 // Individual sides (RTL-aware)
 .border-x { border-inline-width: tokens.$bw-1 !important; border-inline-style: solid !important; }
@@ -299,9 +298,12 @@
 .border-b { border-block-end-width: tokens.$bw-1 !important; border-block-end-style: solid !important; }
 
 // Border Color (Semantic)
-.border-1 { border-color: var(--border-1) !important; }
-.border-2 { border-color: var(--border-2) !important; }
-.border-3 { border-color: var(--border-3) !important; }
+.border-1 { border-color: var(--border-1) !important; } // (Keep for Backward Compatibility)
+.border-2 { border-color: var(--border-2) !important; } // (Keep for Backward Compatibility)
+.border-3 { border-color: var(--border-3) !important; } // (Keep for Backward Compatibility)
+.border-c1 { border-color: var(--border-1) !important; }
+.border-c2 { border-color: var(--border-2) !important; }
+.border-c3 { border-color: var(--border-3) !important; }
 .border-brand { border-color: var(--brand) !important; }
 .border-success { border-color: var(--success) !important; }
 .border-warning { border-color: var(--warning) !important; }

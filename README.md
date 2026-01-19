@@ -181,7 +181,7 @@
         | **Origin**         | 3 types     | `bg-origin-{border,padding,content}`                                                                                                                |
         | **Border Width**   | 5 values    | `border-0`, `border`, `border-2`, `border-4`, `border-8`                                                                                            |
         | **Border Sides**   | 6 logical   | `border-{x,y,s,e,t,b}`                                                                                                                              |
-        | **Border Color**   | 8 semantic  | `border-{1,2,3,brand,success,warning,error,current,transparent}`                                                                                    |
+        | **Border Color**   | 8 semantic  | `border-{c1,c2,c3,brand,success,warning,error,current,transparent}`                                                                                    |
         | **Border Style**   | 6 types     | `border-{solid,dashed,dotted,double,hidden,none}`                                                                                                   |
         | **Border Radius**  | 9 values    | `rounded-{none,sm,base,md,lg,xl,2xl,3xl,full}`                                                                                                      |
         | **Radius Corners** | Logical     | `rounded-{s,e,t,b}`, `rounded-{ss,se,ee,es}`                                                                                                        |
