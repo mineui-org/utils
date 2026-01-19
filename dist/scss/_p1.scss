@@ -209,11 +209,29 @@
 .min-w-max { min-width: max-content !important; }
 .min-w-fit { min-width: fit-content !important; }
 
+// Fixed min widths
+@each $key, $value in (
+  0: tokens.$sp-0, 1: tokens.$sp-1, 2: tokens.$sp-2, 3: tokens.$sp-3, 4: tokens.$sp-4, 6: tokens.$sp-6, 8: tokens.$sp-8,
+  10: tokens.$sp-10, 12: tokens.$sp-12, 16: tokens.$sp-16, 20: tokens.$sp-20, 24: tokens.$sp-24, 32: tokens.$sp-32,
+  40: tokens.$sp-40, 48: tokens.$sp-48, 56: tokens.$sp-56, 64: tokens.$sp-64
+) {
+  .min-w-#{$key} { min-width: $value !important; }
+}
+
 .max-w-none { max-width: none !important; }
 .max-w-full { max-width: 100% !important; }
 .max-w-min { max-width: min-content !important; }
 .max-w-max { max-width: max-content !important; }
 .max-w-fit { max-width: fit-content !important; }
+
+// Fixed max widths
+@each $key, $value in (
+  0: tokens.$sp-0, 1: tokens.$sp-1, 2: tokens.$sp-2, 3: tokens.$sp-3, 4: tokens.$sp-4, 6: tokens.$sp-6, 8: tokens.$sp-8,
+  10: tokens.$sp-10, 12: tokens.$sp-12, 16: tokens.$sp-16, 20: tokens.$sp-20, 24: tokens.$sp-24, 32: tokens.$sp-32,
+  40: tokens.$sp-40, 48: tokens.$sp-48, 56: tokens.$sp-56, 64: tokens.$sp-64
+) {
+  .max-w-#{$key} { max-width: $value !important; }
+}
 
 // Common max-widths
 .max-w-xs { max-width: 20rem !important; }
@@ -270,6 +288,15 @@
 .min-h-min { min-height: min-content !important; }
 .min-h-max { min-height: max-content !important; }
 .min-h-fit { min-height: fit-content !important; }
+
+// Fixed min heights
+@each $key, $value in (
+  0: tokens.$sp-0, 1: tokens.$sp-1, 2: tokens.$sp-2, 3: tokens.$sp-3, 4: tokens.$sp-4, 6: tokens.$sp-6, 8: tokens.$sp-8,
+  10: tokens.$sp-10, 12: tokens.$sp-12, 16: tokens.$sp-16, 20: tokens.$sp-20, 24: tokens.$sp-24, 32: tokens.$sp-32,
+  40: tokens.$sp-40, 48: tokens.$sp-48, 56: tokens.$sp-56, 64: tokens.$sp-64
+) {
+  .min-h-#{$key} { min-height: $value !important; }
+}
 
 .max-h-none { max-height: none !important; }
 .max-h-full { max-height: 100% !important; }
