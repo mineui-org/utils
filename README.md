@@ -8,7 +8,7 @@
 </div>
 
 <div align="center">
-    <img src="https://img.shields.io/badge/v-0.1.6-black"/>
+    <img src="https://img.shields.io/badge/v-0.1.7-black"/>
     <a href="https://github.com/mineui-org"><img src="https://img.shields.io/badge/🔥-@mineui-black"/></a>
     <br>
     <img src="https://img.shields.io/badge/classes-7000+-blue" alt="Total Classes" />
@@ -236,7 +236,7 @@
         | **Overflow**        | `overflow-{auto,hidden,clip,visible,scroll}`, `overflow-{x,y}-{auto,hidden,clip,visible,scroll}` | ✔️         |
         | **Overscroll**      | `overscroll-{auto,contain,none}`, `overscroll-{x,y}-{auto,contain,none}`                         | ✔️         |
         | **Scroll**          | `scroll-{auto,smooth}`                                                                           | ✔️         |
-        | **Z-Index**         | `z-{0,10,20,30,40,50,auto}`, `z-{dropdown,sticky,fixed,modal,popover,tooltip}`                   | ✔️         |
+        | **Z-Index**         | `z-{0,10,20,30,40,50,60,70,80,90,100,auto}`, `z-{dropdown,sticky,fixed,modal,popover,tooltip}`                   | ✔️         |
         | **Visibility**      | `visible`, `invisible`, `collapse`                                                               | ✔️         |
         | **Isolation**       | `isolate`, `isolation-auto`                                                                      | ✔️         |
         | **Object Fit**      | `object-{contain,cover,fill,none,scale-down}`                                                    | ✔️         |
