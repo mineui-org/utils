@@ -5,7 +5,7 @@
 	"repo": {
 		"org"           : "mineui",
 		"name"          : "utils",
-		"version"       : "0.1.7",
+		"version"       : "0.1.8",
 		"desc"          : "utils",
 		"kw"            : ["mine", "ui", "utils"],
 		"license"       : "MIT",

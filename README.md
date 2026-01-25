@@ -8,7 +8,7 @@
 </div>
 
 <div align="center">
-    <img src="https://img.shields.io/badge/v-0.1.7-black"/>
+    <img src="https://img.shields.io/badge/v-0.1.8-black"/>
     <a href="https://github.com/mineui-org"><img src="https://img.shields.io/badge/🔥-@mineui-black"/></a>
     <br>
     <img src="https://img.shields.io/badge/classes-7000+-blue" alt="Total Classes" />
@@ -182,7 +182,7 @@
         | **Border Width**   | 5 values    | `border-0`, `border`, `border-2`, `border-4`, `border-8`                                                                                            |
         | **Border Sides**   | 6 logical   | `border-{x,y,s,e,t,b}`                                                                                                                              |
         | **Border Color**   | 8 semantic  | `border-{c1,c2,c3,brand,success,warning,error,current,transparent}`                                                                                    |
-        | **Border Style**   | 6 types     | `border-{solid,dashed,dotted,double,hidden,none}`                                                                                                   |
+        | **Border Style**   | 6 types     | `border-{solid,dashed,dotted,double,groove,ridge,inset,hidden,none}`                                                                                                   |
         | **Border Radius**  | 9 values    | `rounded-{none,sm,base,md,lg,xl,2xl,3xl,full}`                                                                                                      |
         | **Radius Corners** | Logical     | `rounded-{s,e,t,b}`, `rounded-{ss,se,ee,es}`                                                                                                        |
 
