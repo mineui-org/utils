@@ -1,0 +1,129 @@
+// @mineui/animations
+//
+// Made with ❤️ by Maysara.
+
+
+// ----------------------------------------------------------------------------
+// PACK
+// ----------------------------------------------------------------------------
+
+
+// ----------------------------------------------------------------------------
+// KEYFRAMES
+// ----------------------------------------------------------------------------
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes ping {
+  75%, 100% { transform: scale(2); opacity: 0; }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .5; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(-25%); animation-timing-function: cubic-bezier(0.8, 0, 1, 1); }
+  50% { transform: translateY(0); animation-timing-function: cubic-bezier(0, 0, 0.2, 1); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes slide-in-up {
+  from { transform: translateY(100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slide-in-down {
+  from { transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slide-in-left {
+  from { transform: translateX(-100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slide-in-right {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes zoom-in {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes zoom-out {
+  from { transform: scale(1); opacity: 1; }
+  to { transform: scale(0.95); opacity: 0; }
+}
+
+// ----------------------------------------------------------------------------
+// UTILITIES
+// ----------------------------------------------------------------------------
+
+// Animation
+.animate-none { animation: none !important; }
+.animate-spin { animation: spin 1s linear infinite !important; }
+.animate-ping { animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite !important; }
+.animate-pulse { animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite !important; }
+.animate-bounce { animation: bounce 1s infinite !important; }
+
+// Fades
+.animate-fade-in { animation: fade-in 0.3s ease-out !important; }
+.animate-fade-out { animation: fade-out 0.3s ease-in !important; }
+
+// Slides
+.animate-slide-in-up { animation: slide-in-up 0.3s ease-out !important; }
+.animate-slide-in-down { animation: slide-in-down 0.3s ease-out !important; }
+.animate-slide-in-left { animation: slide-in-left 0.3s ease-out !important; }
+.animate-slide-in-right { animation: slide-in-right 0.3s ease-out !important; }
+
+// Zooms
+.animate-zoom-in { animation: zoom-in 0.3s ease-out !important; }
+.animate-zoom-out { animation: zoom-out 0.3s ease-in !important; }
+
+// Durations
+.animate-duration-75 { animation-duration: 75ms !important; }
+.animate-duration-100 { animation-duration: 100ms !important; }
+.animate-duration-150 { animation-duration: 150ms !important; }
+.animate-duration-200 { animation-duration: 200ms !important; }
+.animate-duration-300 { animation-duration: 300ms !important; }
+.animate-duration-500 { animation-duration: 500ms !important; }
+.animate-duration-700 { animation-duration: 700ms !important; }
+.animate-duration-1000 { animation-duration: 1000ms !important; }
+
+// Delays
+.animate-delay-75 { animation-delay: 75ms !important; }
+.animate-delay-100 { animation-delay: 100ms !important; }
+.animate-delay-150 { animation-delay: 150ms !important; }
+.animate-delay-200 { animation-delay: 200ms !important; }
+.animate-delay-300 { animation-delay: 300ms !important; }
+.animate-delay-500 { animation-delay: 500ms !important; }
+.animate-delay-700 { animation-delay: 700ms !important; }
+.animate-delay-1000 { animation-delay: 1000ms !important; }
+
+// Timing Functions
+.animate-ease-linear { animation-timing-function: linear !important; }
+.animate-ease-in { animation-timing-function: cubic-bezier(0.4, 0, 1, 1) !important; }
+.animate-ease-out { animation-timing-function: cubic-bezier(0, 0, 0.2, 1) !important; }
+.animate-ease-in-out { animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; }
+
+// Fill Mode
+.animate-fill-forwards { animation-fill-mode: forwards !important; }
+.animate-fill-backwards { animation-fill-mode: backwards !important; }
+.animate-fill-both { animation-fill-mode: both !important; }
+.animate-fill-none { animation-fill-mode: none !important; }

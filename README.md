@@ -8,7 +8,7 @@
 </div>
 
 <div align="center">
-    <img src="https://img.shields.io/badge/v-0.1.8-black"/>
+    <img src="https://img.shields.io/badge/v-0.1.9-black"/>
     <a href="https://github.com/mineui-org"><img src="https://img.shields.io/badge/🔥-@mineui-black"/></a>
     <br>
     <img src="https://img.shields.io/badge/classes-7000+-blue" alt="Total Classes" />
@@ -181,10 +181,25 @@
         | **Origin**         | 3 types     | `bg-origin-{border,padding,content}`                                                                                                                |
         | **Border Width**   | 5 values    | `border-0`, `border`, `border-2`, `border-4`, `border-8`                                                                                            |
         | **Border Sides**   | 6 logical   | `border-{x,y,s,e,t,b}`                                                                                                                              |
-        | **Border Color**   | 8 semantic  | `border-{c1,c2,c3,brand,success,warning,error,current,transparent}`                                                                                    |
-        | **Border Style**   | 6 types     | `border-{solid,dashed,dotted,double,groove,ridge,inset,hidden,none}`                                                                                                   |
+        | **Border Color**   | 8 semantic  | `border-{c1,c2,c3,brand,success,warning,error,current,transparent}`                                                                                 |
+        | **Border Style**   | 6 types     | `border-{solid,dashed,dotted,double,groove,ridge,inset,hidden,none}`                                                                                |
         | **Border Radius**  | 9 values    | `rounded-{none,sm,base,md,lg,xl,2xl,3xl,full}`                                                                                                      |
         | **Radius Corners** | Logical     | `rounded-{s,e,t,b}`, `rounded-{ss,se,ee,es}`                                                                                                        |
+
+        ---
+
+    - #### Animations 🎬
+
+        | Category            | Classes                                      | Description          |
+        | ------------------- | -------------------------------------------- | -------------------- |
+        | **Basic**           | `animate-{none,spin,ping,pulse,bounce}`      | Standard animations  |
+        | **Fades**           | `animate-fade-{in,out}`                      | Opacity transitions  |
+        | **Slides**          | `animate-slide-in-{up,down,left,right}`      | Directional entrance |
+        | **Zooms**           | `animate-zoom-{in,out}`                      | Scale transitions    |
+        | **Duration**        | `duration-{75,100,150,200,300,500,700,1000}` | Animation length     |
+        | **Delay**           | `delay-{75,100,150,200,300,500,700,1000}`    | Start delay          |
+        | **Timing Function** | `ease-{linear,in,out,in-out}`                | Speed curve          |
+        | **Fill Mode**       | `fill-{forwards,backwards,both,none}`        | End state behavior   |
 
         ---
 
@@ -236,7 +251,7 @@
         | **Overflow**        | `overflow-{auto,hidden,clip,visible,scroll}`, `overflow-{x,y}-{auto,hidden,clip,visible,scroll}` | ✔️         |
         | **Overscroll**      | `overscroll-{auto,contain,none}`, `overscroll-{x,y}-{auto,contain,none}`                         | ✔️         |
         | **Scroll**          | `scroll-{auto,smooth}`                                                                           | ✔️         |
-        | **Z-Index**         | `z-{0,10,20,30,40,50,60,70,80,90,100,auto}`, `z-{dropdown,sticky,fixed,modal,popover,tooltip}`                   | ✔️         |
+        | **Z-Index**         | `z-{0,10,20,30,40,50,60,70,80,90,100,auto}`, `z-{dropdown,sticky,fixed,modal,popover,tooltip}`   | ✔️         |
         | **Visibility**      | `visible`, `invisible`, `collapse`                                                               | ✔️         |
         | **Isolation**       | `isolate`, `isolation-auto`                                                                      | ✔️         |
         | **Object Fit**      | `object-{contain,cover,fill,none,scale-down}`                                                    | ✔️         |
@@ -296,11 +311,11 @@
 
     - #### Dark Mode & Theme
 
-        | Feature         | Classes                  |
-        | --------------- | ------------------------ |
-        | **Dark Mode**   | 20+ utility variants     |
-        | **Light Only**  | `dark:hidden`            |
-        | **Dark Only**   | `dark:block`             |
+        | Feature         | Classes                      |
+        | --------------- | ---------------------------- |
+        | **Dark Mode**   | 20+ utility variants         |
+        | **Light Only**  | `dark:hidden`                |
+        | **Dark Only**   | `dark:block`                 |
         | **Auto Switch** | Data attribute & system pref |
 
         ---
