@@ -8,7 +8,7 @@
 </div>
 
 <div align="center">
-    <img src="https://img.shields.io/badge/v-0.2.2-black"/>
+    <img src="https://img.shields.io/badge/v-0.2.3-black"/>
     <a href="https://github.com/mineui-org"><img src="https://img.shields.io/badge/🔥-@mineui-black"/></a>
     <br>
     <img src="https://img.shields.io/badge/classes-7000+-blue" alt="Total Classes" />
@@ -156,6 +156,7 @@
         | **Letter Spacing**       | 6 preset           | `tracking-{tighter,tight,normal,wide,wider,widest}`                           | ✔️         |
         | **Text Alignment**       | 6 directions       | `text-{start,end,left,center,right,justify}`                                  | ✔️ Logical |
         | **Text Color**           | Semantic           | `text-{1,2,3,4,inverse,brand,success,warning,error,info,current,transparent}` | ✔️         |
+        | **Interactive**          | Hover/Active       | `hover:text-{brand,success,warning,error,info,tertiary}`<br>`active:text-{brand,success,warning,error,info,tertiary}` | ✔️         |
         | **Decoration**           | -                  | `underline`, `overline`, `line-through`, `no-underline`                       | ✔️         |
         | **Decoration Style**     | 5 types            | `decoration-{solid,double,dotted,dashed,wavy}`                                | ✔️         |
         | **Decoration Thickness** | auto-8px           | `decoration-{auto,from-font,0,1,2,4,8}`                                       | ✔️         |
@@ -173,6 +174,7 @@
         | Category           | Variants    | Classes                                                                                                                                             |
         | ------------------ | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
         | **Color**          | 11 semantic | `bg-{page,surface,raised,brand,brand-subtle,success,success-subtle,warning,warning-subtle,error,error-subtle,info,info-subtle,current,transparent}` |
+        | **Interactive**    | Hover/Active| `hover:bg-{brand,success,warning,error,info,raised}`<br>`active:bg-{brand,success,warning,error,info}`                                             |
         | **Attachment**     | 3 types     | `bg-{fixed,local,scroll}`                                                                                                                           |
         | **Position**       | 9 positions | `bg-{bottom,center,left,left-bottom,left-top,right,right-bottom,right-top,top}`                                                                     |
         | **Repeat**         | 6 types     | `bg-{repeat,no-repeat,repeat-x,repeat-y,repeat-round,repeat-space}`                                                                                 |
@@ -279,12 +281,12 @@
 
     - #### State Variants
 
-        | State           | Coverage                                                  |
-        | --------------- | --------------------------------------------------------- |
-        | **Hover**       | Background, Opacity, Scale, Shadow, Translate, Brightness |
-        | **Focus**       | Outline, Ring, Scale                                      |
-        | **Active**      | Scale, Opacity, Background                                |
-        | **Disabled**    | Opacity, Cursor                                           |
+        | State           | Coverage                                                              |
+        | --------------- | --------------------------------------------------------------------- |
+        | **Hover**       | Background, Text Color, Opacity, Scale, Shadow, Translate, Brightness |
+        | **Focus**       | Outline, Ring, Scale                                                  |
+        | **Active**      | Scale, Opacity, Background, Text Color                                |
+        | **Disabled**    | Opacity, Cursor                                                       |
         | **Group Hover** | Multiple child effects                                    |
         | **First/Last**  | Margin, Radius                                            |
         | **Odd/Even**    | Background (striped tables)                               |
@@ -534,7 +536,7 @@
         - #### Active
 
             ```html
-            <button class="active:scale-95 active:opacity-80">
+            <button class="active:scale-95 active:opacity-80 active:text-brand">
               Press me
             </button>
             ```

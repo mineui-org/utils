@@ -172,6 +172,18 @@
 
 // Background
 .active\:bg-brand:active { background-color: var(--brand-active) !important; }
+.active\:bg-success:active { background-color: var(--success-active) !important; }
+.active\:bg-warning:active { background-color: var(--warning-active) !important; }
+.active\:bg-error:active { background-color: var(--error-active) !important; }
+.active\:bg-info:active { background-color: var(--info-active) !important; }
+
+// Text
+.active\:text-brand:active { color: var(--brand-active) !important; }
+.active\:text-success:active { color: var(--success-active) !important; }
+.active\:text-warning:active { color: var(--warning-active) !important; }
+.active\:text-error:active { color: var(--error-active) !important; }
+.active\:text-info:active { color: var(--info-active) !important; }
+.active\:text-tertiary:active { color: var(--text-3) !important; }
 
 // ----------------------------------------------------------------------------
 // DISABLED STATE VARIANTS
